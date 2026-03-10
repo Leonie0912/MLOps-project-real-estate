@@ -42,6 +42,11 @@ print(df['Valeur fonciere'].dtype)
 print(df['Valeur fonciere'].head())
 
 #now we need to do some computations to be able to add the "google flights" feature : price is lower or higher than average?
+
+#is the surface a null value for some rows? 
+nan_surface = df['Surface reelle bati'].isnull().sum()
+print("rows with nan surface : ")
+print(nan_surface)                          #result = 92
 #we remove rows there the surface is NaN
 df = df.dropna(subset=['Surface reelle bati'])
 
@@ -53,3 +58,4 @@ print(zero_surface)         #result = 0
 #price per m2
 df['price_per_m2'] = df['Valeur fonciere'] / df["Surface reelle bati"]
 print(df[['Commune', 'Valeur fonciere', 'Surface reelle bati', 'price_per_m2']].head())
+
