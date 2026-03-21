@@ -12,7 +12,7 @@ In this project, we build a tool for people who want to buy a property (a little
 
 ### DVF dataset
 
-This project started our with this dataset : *Demande de Valeurs Foncières (DVF)* from <ins>data.gouv.fr</ins> website. This dataset is the record of all real estate transactions that happened in France in 2024. 
+This project started our with this dataset : *Demande de Valeurs Foncières (DVF)* from [data.gouv.fr website] (https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres). This dataset is the record of all real estate transactions that happened in France in 2024. 
 
 It is large and messy, so it's important that we start this by cleaning the data. 
 
