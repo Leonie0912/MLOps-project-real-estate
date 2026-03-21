@@ -65,7 +65,7 @@ These are all the columns in the dataset :
 
 **Admin columns**
 
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it (Y/N)|
+|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ? (Y/N)|
 |:---|:---|:---|:---|
 |Identifiant de document|document ID|Y||
 |Reference document|document reference (official)|Y||
@@ -74,7 +74,8 @@ These are all the columns in the dataset :
 
 **Transaction Details**
 
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it (Y/N)|
+|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ? (Y/N)|
+|:---|:---|:---|:---|
 |Date mutation|Date of the transaction|N|Y|
 |Nature mutation|Type of the transaction (ex: sale)|N|Y|
 
