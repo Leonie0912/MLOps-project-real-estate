@@ -29,15 +29,15 @@ A column is considered full when more than ~60% of it is full, and considered em
 |Identifiant de document|document ID|Yes||
 |Reference document|document reference (official)|Yes||
 |1/2/3/4/5 Articles CGI|tax law articles|Yes||
-|No disposition|transaction number|No||
+|No disposition|transaction number|No|maybe in the market liquidity score|
 
 **Transaction Details**
 
 |Column|Short Description|Is it mostly empty?|Could / Will we use it?|
 |:---|:---|:---|:---|
-|Date mutation|Date of the transaction|No|idk|
-|Nature mutation|Type of the transaction (ex: vente, vente terrain, échange)|No|idk|
-|Valeur fonciere|Amount in €|No|idk|
+|Date mutation|Date of the transaction|No|maybe in the "comparing price to average" feature, also maybe in the market liquidity score|
+|Nature mutation|Type of the transaction (ex: vente, vente terrain, échange)|No|maybe in the "fraud detection" feature|
+|Valeur fonciere|Amount in €|No|maybe in the "fraud detection" feature|
 
 **Address**
 |Column|Short Description|Is it mostly empty?|Could / Will we use it?|
@@ -47,7 +47,7 @@ A column is considered full when more than ~60% of it is full, and considered em
 |Type de voie|Rue, Avenue...|No||
 |Code voie|Street Code|No|idk|
 |Voie|Name of the street|No|idk|
-|Code postal|Zip Code|No|idk|
+|Code postal|Zip Code|No|maybe in the "comparing price to average" feature, also maybe in the market liquidity score|
 |Commune|Name of the city|No|Yes|
 |Code departement|Department (ex: 75, 92)|No|idk|
 |Code commune|City code from INSEE|No|idk|
@@ -72,10 +72,10 @@ We don't use these columns
 |Column|Short Description|Is it mostly empty?|Could / Will we use it?|
 |:---|:---|:---|:---|
 |Code type local|Code of property type|No||
-|Type local|Type (house, appt, etc)|No||
+|Type local|Type (house, appt, etc)|No|maybe in the "comparing price to average" feature|
 |Identifiant local|Property ID|Yes||
-|Surface reelle bati|Total building area|No||
-|Nombre pieces principales|Number of rooms (excl rooms with water supply)|No||
+|Surface reelle bati|Total building area|No|maybe in the land potential score|
+|Nombre pieces principales|Number of rooms (excl rooms with water supply)|No|maybe in the "fraud detection" feature|
 
 **Land**
 
@@ -83,7 +83,7 @@ We don't use these columns
 |:---|:---|:---|:---|
 |Nature culture|Land use type|No|idk|
 |Nature culture speciale|Specific land use type|Yes||
-|Surface terrain|Total surface|No|idk|
+|Surface terrain|Total surface|No|maybe in the land potential score|
 
 The "surface Carrez" is the floor area computed following the Loi Carrez : the total living space without the surface of walls, stairs, and areas without less than 1.8m between floor and ceiling[^1].
 
