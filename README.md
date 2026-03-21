@@ -63,12 +63,14 @@ These are all the columns in the dataset :
 * Nature culture speciale
 * Surface terrain
 
-Admin columns 
+**Admin columns**
 
 |Column|Short Description|Is is mostly empty? (Y/N)|Do we need it (Y/N)|
 |:---|:---|:---|:---|
 |Identifiant de document|document ID|Y||
 |Reference document|document reference (official)|Y||
+|1/2/3/4/5 Articles CGI|Tax law articles|Y||
+|No disposition|Transaction number|Y||
 
 ## 2. Formatting the repo better
 
