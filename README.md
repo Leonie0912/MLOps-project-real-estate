@@ -65,12 +65,18 @@ These are all the columns in the dataset :
 
 **Admin columns**
 
-|Column|Short Description|Is is mostly empty? (Y/N)|Do we need it (Y/N)|
+|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it (Y/N)|
 |:---|:---|:---|:---|
 |Identifiant de document|document ID|Y||
 |Reference document|document reference (official)|Y||
-|1/2/3/4/5 Articles CGI|Tax law articles|Y||
-|No disposition|Transaction number|Y||
+|1/2/3/4/5 Articles CGI|tax law articles|Y||
+|No disposition|transaction number|Y||
+
+**Transaction Details**
+
+|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it (Y/N)|
+|Date mutation|Date of the transaction|N|Y|
+|Nature mutation|Type of the transaction (ex: sale)|N|Y|
 
 ## 2. Formatting the repo better
 
