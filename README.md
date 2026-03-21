@@ -87,8 +87,26 @@ We don't use these columns
 
 The "surface Carrez" is the floor area computed following the Loi Carrez : the total living space without the surface of walls, stairs, and areas without less than 1.8m between floor and ceiling[^1].
 
+Here are some ideas of features we will integrate to this website : 
+* Comparing prices to the "usual". 
+Just like Google Flights, we would like to compare the price of transactions to the usual price of the area / arrondissement / town.
+
+[^1] : https://www.dictionnaire-juridique.com/definition/loi-carrez.php#:~:text=D%C3%A9finition%20de%20Loi%20Carrez&text=La%20surface%20%C3%A9nonc%C3%A9e%20%C3%A0%20l,de%20portes%20et%20de%20fen%C3%AAtres.
 
 ## 2. Formatting the repo better
+
+After cleaning the data, we had to make sure the structure of our repo was functional. 
+
+Originally we created two files : app.py and test.py. Test.py is the file on which we started data cleaning and computing metrics (like the price per m2 of a transaction.) App.py is the file where we started building a Streamlit platform. 
+
+However, in order to build multiple features, we needed to store then in different .py files, and call them in the main app.py. 
+
+We created a folder "data" where we store our dataset (DVF) contaning all of 2024 transactions.
+Then we created another folder "src" with the different .py files for the different features. 
+
+App.py is isolated outside of a folder, and is the only file where we use the Streamlit library. This means all the other files are independent of Streamlit and can be tested on their own. 
+
+
 
 ## 3. Building features for our website 
 
@@ -96,4 +114,3 @@ The "surface Carrez" is the floor area computed following the Loi Carrez : the t
 
 
 
-[^1] : https://www.dictionnaire-juridique.com/definition/loi-carrez.php#:~:text=D%C3%A9finition%20de%20Loi%20Carrez&text=La%20surface%20%C3%A9nonc%C3%A9e%20%C3%A0%20l,de%20portes%20et%20de%20fen%C3%AAtres.
