@@ -1,5 +1,7 @@
 # MLOps-project-real-estate
 
+![picture of a house](./images/house.jpg)
+
 March 9th, 2026 : 
 
 Welcome to Léonie and Tommaso's final project for the MLOps class (DSBA M2). 
