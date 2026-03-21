@@ -2,9 +2,7 @@
 
 ![picture of a house](./images/building.jpeg)
 
-March 9th, 2026 : 
-
-**Welcome to Léonie and Tommaso's final project for the MLOps class (DSBA M2).**
+**Welcome to Léonie Willecomme and Tommaso Conti's final project for the MLOps class (DSBA M2).**
 
 In this project, we build a tool for people who want to buy a property (a little bit like SeLoger). We also add a fraud detection feature and a "price is currently above / below average" feature. 
 
@@ -65,10 +63,12 @@ These are all the columns in the dataset :
 * Nature culture speciale
 * Surface terrain
 
-test tableau
-|Colonne 1|Colonne2|Colonne3|
-|:---|:---|:---|
-|blabla|texte|hihi|
+Admin columns 
+
+|Column|Short Description|Is is mostly empty? (Y/N)|Do we need it (Y/N)|
+|:---|:---|:---|:---|
+|Identifiant de document|document ID|Y||
+|Reference document|document reference (official)|Y||
 
 ## 2. Formatting the repo better
 
