@@ -70,7 +70,7 @@ These are all the columns in the dataset :
 |Identifiant de document|document ID|Y||
 |Reference document|document reference (official)|Y||
 |1/2/3/4/5 Articles CGI|tax law articles|Y||
-|No disposition|transaction number|Y||
+|No disposition|transaction number|N|N|
 
 **Transaction Details**
 
