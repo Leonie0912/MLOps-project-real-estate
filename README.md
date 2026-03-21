@@ -106,10 +106,13 @@ We don't use these columns
 |:---|:---|:---|:---|
 |1er / 2eme / 3eme / 4eme / 5eme lot|Individual unit numbers|Y||
 |Surface Carrez|Floor area|Y||
+|Nombre de lots|Number of units|N|N|
 |:---|:---|:---|:---|
 |:---|:---|:---|:---|
 |:---|:---|:---|:---|
-|:---|:---|:---|:---|
+
+
+
 The "surface Carrez" is the floor area computed following the Loi Carrez : the total living space without the surface of walls, stairs, and areas without less than 1.8m between floor and ceiling[^1].
 
 
