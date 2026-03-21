@@ -80,6 +80,19 @@ These are all the columns in the dataset :
 |Nature mutation|Type of the transaction (ex: vente, vente terrain, échange)|N|Y|
 |Valeur fonciere|Amount in €|N|Y|
 
+**Address**
+|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ? (Y/N)|
+|:---|:---|:---|:---|
+|No voie|Street number|Y||
+|B/T/Q|Bis, Ter, Quater|Y||
+|Type de voie|Rue, Avenue...|Y|:---|
+|Code voie|Street Code|N|N|
+|Voie|Name of the street|N|N|
+|Code postal|Zip Code|N|Y|
+|Commune|Name of the city|N|Y|
+|Code departement|Department (ex: 75, 92)|N|Y|
+|Code commune|City code from INSEE|N|Y|
+
 ## 2. Formatting the repo better
 
 ## 3. Building features for our website 
