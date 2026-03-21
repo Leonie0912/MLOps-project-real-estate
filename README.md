@@ -1,6 +1,6 @@
 # MLOps-project-real-estate
 
-![picture of a house](./images/house.jpg)
+![picture of a house](./images/building.jpeg)
 
 March 9th, 2026 : 
 
