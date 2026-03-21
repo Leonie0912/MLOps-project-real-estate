@@ -74,14 +74,14 @@ These are all the columns in the dataset :
 
 **Transaction Details**
 
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ? (Y/N)|
+|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
 |:---|:---|:---|:---|
 |Date mutation|Date of the transaction|N|Y|
 |Nature mutation|Type of the transaction (ex: vente, vente terrain, échange)|N|Y|
 |Valeur fonciere|Amount in €|N|Y|
 
 **Address**
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ? (Y/N)|
+|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
 |:---|:---|:---|:---|
 |No voie|Street number|Y||
 |B/T/Q|Bis, Ter, Quater|Y||
@@ -101,7 +101,9 @@ We don't use these columns
 * No Volume
 
 **Lots (co-ownership)**
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ? (Y/N)|
+
+|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
+|:---|:---|:---|:---|
 |1er / 2eme / 3eme / 4eme / 5eme lot|Individual unit numbers|Y||
 |Surface Carrez|Floor area|Y||
 |:---|:---|:---|:---|
