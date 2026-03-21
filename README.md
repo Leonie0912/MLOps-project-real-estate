@@ -24,26 +24,26 @@ A column is considered full when more than ~60% of it is full, and considered em
 
 **Admin columns**
 
-|Column|Short Description|Is it mostly empty?|Do we need it ?|
+|Column|Short Description|Is it mostly empty?|Could / Will we use it?|
 |:---|:---|:---|:---|
-|Identifiant de document|document ID|Y||
-|Reference document|document reference (official)|Y||
-|1/2/3/4/5 Articles CGI|tax law articles|Y||
+|Identifiant de document|document ID|Yes||
+|Reference document|document reference (official)|Yes||
+|1/2/3/4/5 Articles CGI|tax law articles|Yes||
 |No disposition|transaction number|No||
 
 **Transaction Details**
 
-|Column|Short Description|Is it mostly empty?|Do we need it ?|
+|Column|Short Description|Is it mostly empty?|Could / Will we use it?|
 |:---|:---|:---|:---|
 |Date mutation|Date of the transaction|No|idk|
 |Nature mutation|Type of the transaction (ex: vente, vente terrain, échange)|No|idk|
 |Valeur fonciere|Amount in €|No|idk|
 
 **Address**
-|Column|Short Description|Is it mostly empty?|Do we need it ?|
+|Column|Short Description|Is it mostly empty?|Could / Will we use it?|
 |:---|:---|:---|:---|
 |No voie|Street number|No||
-|B/T/Q|Bis, Ter, Quater|Y||
+|B/T/Q|Bis, Ter, Quater|Yes||
 |Type de voie|Rue, Avenue...|No||
 |Code voie|Street Code|No|idk|
 |Voie|Name of the street|No|idk|
@@ -61,28 +61,28 @@ We don't use these columns
 
 **Lots (co-ownership)**
 
-|Column|Short Description|Is it mostly empty?|Do we need it ?|
+|Column|Short Description|Is it mostly empty?|Could / Will we use it?|
 |:---|:---|:---|:---|
-|1er / 2eme / 3eme / 4eme / 5eme lot|Individual unit numbers|Y||
-|Surface Carrez|Floor area|Y||
+|1er / 2eme / 3eme / 4eme / 5eme lot|Individual unit numbers|Yes||
+|Surface Carrez|Floor area|Yes||
 |Nombre de lots|Number of units|No|idk|
 
 **Characteristics of the property**
 
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
+|Column|Short Description|Is it mostly empty?|Could / Will we use it?|
 |:---|:---|:---|:---|
 |Code type local|Code of property type|No||
 |Type local|Type (house, appt, etc)|No||
-|Identifiant local|Property ID|Y||
+|Identifiant local|Property ID|Yes||
 |Surface reelle bati|Total building area|No||
 |Nombre pieces principales|Number of rooms (excl rooms with water supply)|No||
 
 **Land**
 
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
+|Column|Short Description|Is it mostly empty?|Could / Will we use it?|
 |:---|:---|:---|:---|
 |Nature culture|Land use type|No|idk|
-|Nature culture speciale|Specific land use type|Y||
+|Nature culture speciale|Specific land use type|Yes||
 |Surface terrain|Total surface|No|idk|
 
 The "surface Carrez" is the floor area computed following the Loi Carrez : the total living space without the surface of walls, stairs, and areas without less than 1.8m between floor and ceiling[^1].
