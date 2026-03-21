@@ -18,80 +18,39 @@ The first step was adding a .gitignore : "*.txt". This is important because othe
 
 ### Cleaning the data 
 
-These are all the columns in the dataset : 
-* Identifiant de document
-* Reference document
-* 1 Articles CGI
-* 2 Articles CGI
-* 3 Articles CGI
-* 4 Articles CGI
-* 5 Articles CGI
-* No disposition
-* Date mutation
-* Nature mutation
-* Valeur fonciere
-* No voie
-* B/T/Q
-* Type de voie
-* Code voie
-* Voie
-* Code postal
-* Commune
-* Code departement
-* Code commune
-* Prefixe de section
-* Section
-* No plan
-* No Volume
-* 1er lot
-* Surface Carrez du 1er lot
-* 2eme lot
-* Surface Carrez du 2eme lot
-* 3eme lot
-* Surface Carrez du 3eme lot
-* 4eme lot
-* Surface Carrez du 4eme lot
-* 5eme lot
-* Surface Carrez du 5eme lot
-* Nombre de lots
-* Code type local
-* Type local
-* Identifiant local
-* Surface reelle bati
-* Nombre pieces principales
-* Nature culture
-* Nature culture speciale
-* Surface terrain
+Here are all the columns of the data, if they are empty or not, and what we could use them for. 
+
+A column is considered full when more than ~60% of it is full, and considered empty when ~40% of the rows are null values.
 
 **Admin columns**
 
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
+|Column|Short Description|Is it mostly empty?|Do we need it ?|
 |:---|:---|:---|:---|
 |Identifiant de document|document ID|Y||
 |Reference document|document reference (official)|Y||
 |1/2/3/4/5 Articles CGI|tax law articles|Y||
-|No disposition|transaction number|N||
+|No disposition|transaction number|No||
 
 **Transaction Details**
 
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
+|Column|Short Description|Is it mostly empty?|Do we need it ?|
 |:---|:---|:---|:---|
-|Date mutation|Date of the transaction|N|Y|
-|Nature mutation|Type of the transaction (ex: vente, vente terrain, échange)|N|Y|
-|Valeur fonciere|Amount in €|N|Y|
+|Date mutation|Date of the transaction|No|idk|
+|Nature mutation|Type of the transaction (ex: vente, vente terrain, échange)|No|idk|
+|Valeur fonciere|Amount in €|No|idk|
 
 **Address**
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
+|Column|Short Description|Is it mostly empty?|Do we need it ?|
 |:---|:---|:---|:---|
-|No voie|Street number|Y||
+|No voie|Street number|No||
 |B/T/Q|Bis, Ter, Quater|Y||
-|Type de voie|Rue, Avenue...|Y||
-|Code voie|Street Code|N|N|
-|Voie|Name of the street|N|N|
-|Code postal|Zip Code|N|Y|
-|Commune|Name of the city|N|Y|
-|Code departement|Department (ex: 75, 92)|N|Y|
-|Code commune|City code from INSEE|N|Y|
+|Type de voie|Rue, Avenue...|No||
+|Code voie|Street Code|No|idk|
+|Voie|Name of the street|No|idk|
+|Code postal|Zip Code|No|idk|
+|Commune|Name of the city|No|Yes|
+|Code departement|Department (ex: 75, 92)|No|idk|
+|Code commune|City code from INSEE|No|idk|
 
 **Document information**
 We don't use these columns
@@ -102,31 +61,29 @@ We don't use these columns
 
 **Lots (co-ownership)**
 
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
+|Column|Short Description|Is it mostly empty?|Do we need it ?|
 |:---|:---|:---|:---|
 |1er / 2eme / 3eme / 4eme / 5eme lot|Individual unit numbers|Y||
 |Surface Carrez|Floor area|Y||
-|Nombre de lots|Number of units|N|N|
+|Nombre de lots|Number of units|No|idk|
 
 **Characteristics of the property**
 
 |Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
 |:---|:---|:---|:---|
-|Code type local|Code of property type|Y||
-|Type local|Type (house, appt, etc)|Y||
+|Code type local|Code of property type|No||
+|Type local|Type (house, appt, etc)|No||
 |Identifiant local|Property ID|Y||
-|Surface reelle bati|Total building area|Y||
-|Nombre pieces principales|Number of rooms (excl rooms with water supply)|Y||
+|Surface reelle bati|Total building area|No||
+|Nombre pieces principales|Number of rooms (excl rooms with water supply)|No||
 
 **Land**
 
 |Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
 |:---|:---|:---|:---|
-|Nature culture|Land use type|N|idk|
-Nature culture speciale|Specific land use type|Y||
-|Surface terrain|Total surface|N|idk|
-
-A column is considered full when more than ~60% of it is full, and considered empty when ~40% of the rows are null values.
+|Nature culture|Land use type|No|idk|
+|Nature culture speciale|Specific land use type|Y||
+|Surface terrain|Total surface|No|idk|
 
 The "surface Carrez" is the floor area computed following the Loi Carrez : the total living space without the surface of walls, stairs, and areas without less than 1.8m between floor and ceiling[^1].
 
