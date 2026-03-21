@@ -126,6 +126,7 @@ We don't use these columns
 Nature culture speciale|Specific land use type|Y||
 |Surface terrain|Total surface|N|idk|
 
+A column is considered full when more than ~60% of it is full, and considered empty when ~40% of the rows are null values.
 
 The "surface Carrez" is the floor area computed following the Loi Carrez : the total living space without the surface of walls, stairs, and areas without less than 1.8m between floor and ceiling[^1].
 
