@@ -65,12 +65,12 @@ These are all the columns in the dataset :
 
 **Admin columns**
 
-|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ? (Y/N)|
+|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ?|
 |:---|:---|:---|:---|
 |Identifiant de document|document ID|Y||
 |Reference document|document reference (official)|Y||
 |1/2/3/4/5 Articles CGI|tax law articles|Y||
-|No disposition|transaction number|N|N|
+|No disposition|transaction number|N||
 
 **Transaction Details**
 
@@ -85,7 +85,7 @@ These are all the columns in the dataset :
 |:---|:---|:---|:---|
 |No voie|Street number|Y||
 |B/T/Q|Bis, Ter, Quater|Y||
-|Type de voie|Rue, Avenue...|Y|:---|
+|Type de voie|Rue, Avenue...|Y||
 |Code voie|Street Code|N|N|
 |Voie|Name of the street|N|N|
 |Code postal|Zip Code|N|Y|
@@ -93,8 +93,30 @@ These are all the columns in the dataset :
 |Code departement|Department (ex: 75, 92)|N|Y|
 |Code commune|City code from INSEE|N|Y|
 
+**Document information**
+We don't use these columns
+* Prefixe de section
+* Section
+* No plan
+* No Volume
+
+**Lots (co-ownership)**
+|Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ? (Y/N)|
+|1er / 2eme / 3eme / 4eme / 5eme lot|Individual unit numbers|Y||
+|Surface Carrez|Floor area|Y||
+|:---|:---|:---|:---|
+|:---|:---|:---|:---|
+|:---|:---|:---|:---|
+|:---|:---|:---|:---|
+The "surface Carrez" is the floor area computed following the Loi Carrez : the total living space without the surface of walls, stairs, and areas without less than 1.8m between floor and ceiling[^1].
+
+
 ## 2. Formatting the repo better
 
 ## 3. Building features for our website 
 
 ## 4. Potential other features 
+
+
+
+[^1] : https://www.dictionnaire-juridique.com/definition/loi-carrez.php#:~:text=D%C3%A9finition%20de%20Loi%20Carrez&text=La%20surface%20%C3%A9nonc%C3%A9e%20%C3%A0%20l,de%20portes%20et%20de%20fen%C3%AAtres.
