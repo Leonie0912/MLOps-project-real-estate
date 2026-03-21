@@ -77,7 +77,8 @@ These are all the columns in the dataset :
 |Column|Short Description|Is it mostly empty? (Y/N)|Do we need it ? (Y/N)|
 |:---|:---|:---|:---|
 |Date mutation|Date of the transaction|N|Y|
-|Nature mutation|Type of the transaction (ex: sale)|N|Y|
+|Nature mutation|Type of the transaction (ex: vente, vente terrain, échange)|N|Y|
+|Valeur fonciere|Amount in €|N|Y|
 
 ## 2. Formatting the repo better
 
