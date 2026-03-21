@@ -106,11 +106,21 @@ Then we created another folder "src" with the different .py files for the differ
 
 App.py is isolated outside of a folder, and is the only file where we use the Streamlit library. This means all the other files are independent of Streamlit and can be tested on their own. 
 
-
+The original test.py file is now in the folder "old". 
 
 ## 3. Building features for our website 
 
+### Feature to compare price to average (like Google Flights)
+### Fraud detection feature
+### Land potential score
+### Market liquidity score
+
 ## 4. Potential other features 
+
+here we'll write about the maintenance if hypothetically this project was published online and used by other people. 
+ex: anticipate what these users would need, statistics, latency, etc
+
+also hypothetically if we update this website, how would current version compare with old version. 
 
 
 
