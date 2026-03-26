@@ -1,6 +1,6 @@
 import pandas as pd
 
-def clean_dvf(df: pd.DataFrame) -> pd.DataFrame:
+def clean_dvf(df: pd.DataFrame):
 
     #1. remove the columns we don't use or that are empty
 
