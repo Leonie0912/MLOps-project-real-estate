@@ -38,4 +38,9 @@ def clean_dvf(df: pd.DataFrame):
         .str.zfill(5)
     )
 
+    #We noticed some "nan" values were left, and so filled to make 5 characters it became "00nan"
+    #so we remove them
+
+    df = df[df["Code postal"] != "00nan"]
+
     return df.copy()

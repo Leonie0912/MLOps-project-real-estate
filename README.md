@@ -6,6 +6,9 @@
 
 In this project, we build a tool for people who want to buy a property (a little bit like SeLoger). We also add a fraud detection feature and a "price is currently above / below average" feature. 
 
+[!IMPORTANT]
+**Executive Summary: ** Here we'll add 3-5 lines explaining what this tool does (so a senior manager can understand it fast)
+
 ## 1. Starting the project : finding and cleaning the data 
 
 ### DVF dataset
@@ -93,29 +96,14 @@ Just like Google Flights, we would like to compare the price of transactions to 
 
 [^1] : https://www.dictionnaire-juridique.com/definition/loi-carrez.php#:~:text=D%C3%A9finition%20de%20Loi%20Carrez&text=La%20surface%20%C3%A9nonc%C3%A9e%20%C3%A0%20l,de%20portes%20et%20de%20fen%C3%AAtres.
 
-## 2. Formatting the repo better
-
-After cleaning the data, we had to make sure the structure of our repo was functional. 
-
-Originally we created two files : app.py and test.py. Test.py is the file on which we started data cleaning and computing metrics (like the price per m2 of a transaction.) App.py is the file where we started building a Streamlit platform. 
-
-However, in order to build multiple features, we needed to store then in different .py files, and call them in the main app.py. 
-
-We created a folder "data" where we store our dataset (DVF) contaning all of 2024 transactions.
-Then we created another folder "src" with the different .py files for the different features. 
-
-App.py is isolated outside of a folder, and is the only file where we use the Streamlit library. This means all the other files are independent of Streamlit and can be tested on their own. 
-
-The original test.py file is now in the folder "old". 
-
-## 3. Building features for our website 
+## 2. Building features for our website 
 
 ### Feature to compare price to average (like Google Flights)
 ### Fraud detection feature
 ### Land potential score
 ### Market liquidity score
 
-## 4. Potential other features 
+## 3. Potential other features 
 
 here we'll write about the maintenance if hypothetically this project was published online and used by other people. 
 ex: anticipate what these users would need, statistics, latency, etc
