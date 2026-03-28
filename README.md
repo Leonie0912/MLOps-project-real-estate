@@ -9,7 +9,11 @@
 > Our mission at Vesta is providing users with a reliable foundation for their property acquisition.
 
 >[!NOTE]
->**Our added value** Here we'll explain what this tool does and what are the limits (main one : a lot of null, no lat/long, etc)
+>**Our added value** Going beyond traditional real estate platforms, we analyze every listing to assist decision-making : 
+>* Fraud Detection : Detecting abnormally low prices or dataset errors (for example a studio listed as having 4 beds)
+>* Price Analysis : Comparing every listing with the local market and classifying in three categories : Good Deal, Fair Price, and Premium
+>* Developer's Choice : Finding listings perfect for developers and investors, offering lots of ready-to-build land
+>* Market Velocity : Measuring the speed of transactions in each location
 
 >[!TIP]
 >**How to run this code** How to open in VSCode, What file to run, How to call Streamlit ("streamlit run app.py")
