@@ -25,4 +25,17 @@ def clean_dvf(df: pd.DataFrame):
 
     df = df.dropna(subset=["Surface reelle bati", "Valeur fonciere"])
 
+    #5. zip code
+    #now we need to make sure the zip code is in the correct format
+    #if it's a number, python removes the first "0" and adds .0 at the end
+    #for example 06000 becomes 6000.0 (for Nice)
+
+    df["Code postal"] = (
+        df["Code postal"]
+        .astype(str)
+        .str.split('.')     #split between 6000 and 0 and take the fist part
+        .str[0]
+        .str.zfill(5)
+    )
+
     return df.copy()
