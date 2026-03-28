@@ -9,7 +9,7 @@
 > Our mission at Vesta is providing users with a reliable foundation for their property acquisition.
 
 >[!NOTE]
->**Our added value** Going beyond traditional real estate platforms, we analyze every listing to assist decision-making : 
+>**Our added value:** Going beyond traditional real estate platforms, Vesta analyzes every listing to assist decision-making : 
 >* Fraud Detection : Detecting abnormally low prices or dataset errors (for example a studio listed as having 4 beds)
 >* Price Analysis : Comparing every listing with the local market and classifying in three categories : Good Deal, Fair Price, and Premium
 >* Developer's Choice : Finding listings perfect for developers and investors, offering lots of ready-to-build land
@@ -28,6 +28,9 @@ Potential other features : here we'll write about the maintenance if hypothetica
 ex: anticipate what these users would need, statistics, latency, etc
 
 also hypothetically if we update this website, how would current version compare with old version. 
+
+[!NOTE]
+>**Limitations:** here we write about the limitations of this project, mainly : data is not updated often, data sparsity (many null values), no latitude / longitude 
 
 ## More information about building this real estate startup
 
