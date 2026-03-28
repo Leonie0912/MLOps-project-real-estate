@@ -4,10 +4,8 @@
 
 **Welcome to Léonie Willecomme and Tommaso Conti's final project for the MLOps class (DSBA M2).**
 
-In this project, we build a tool for people who want to buy a property (a little bit like SeLoger). We also add a fraud detection feature and a "price is currently above / below average" feature. 
-
 >[!IMPORTANT]
->**Executive Summary:** Here we'll add 3-5 lines explaining what this tool does (so a senior manager can understand it fast)
+>**Executive Summary:** Here we'll add 3-5 lines explaining what this tool does (so a senior manager can understand it fast). "In this project, we build a tool for people who want to buy a property (a little bit like SeLoger). We also add a fraud detection feature and a "price is currently above / below average" feature."
 
 >[!NOTE]
 >**Why this project matters** Here we'll explain what this tool does and what are the limits (main one : a lot of null, no lat/long, etc)
