@@ -29,7 +29,7 @@ ex: anticipate what these users would need, statistics, latency, etc
 
 also hypothetically if we update this website, how would current version compare with old version. 
 
-[!NOTE]
+>[!NOTE]
 >**Limitations:** here we write about the limitations of this project, mainly : data is not updated often, data sparsity (many null values), no latitude / longitude 
 
 ## More information about building this real estate startup
