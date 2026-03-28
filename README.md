@@ -2,13 +2,14 @@
 
 ![picture of a house](./images/building.jpeg)
 
-**Welcome to Léonie Willecomme and Tommaso Conti's final project for the MLOps class (DSBA M2).**
+**Welcome to Vesta : Léonie Willecomme and Tommaso Conti's final project for the MLOps class (DSBA M2).**
 
 >[!IMPORTANT]
->**Executive Summary:** Here we'll add 3-5 lines explaining what this tool does (so a senior manager can understand it fast). "In this project, we build a tool for people who want to buy a property (a little bit like SeLoger). We also add a fraud detection feature and a "price is currently above / below average" feature."
+>**Executive Summary:** Vesta is built to assist people in purchasing a home or investing in real estate. Our platform uses the dataset "Demandes de Valeurs Foncières" of 2024 into an interface capable of analyzing price, location, and detecting fraudulent listings.
+> Our mission at Vesta is providing users with a reliable foundation for their property acquisition.
 
 >[!NOTE]
->**Why this project matters** Here we'll explain what this tool does and what are the limits (main one : a lot of null, no lat/long, etc)
+>**Our added value** Here we'll explain what this tool does and what are the limits (main one : a lot of null, no lat/long, etc)
 
 >[!TIP]
 >**How to run this code** How to open in VSCode, What file to run, How to call Streamlit ("streamlit run app.py")
@@ -30,7 +31,7 @@ also hypothetically if we update this website, how would current version compare
 
 #### DVF dataset
 
-This project started our with this dataset : *Demande de Valeurs Foncières (DVF)* from [data.gouv.fr website] (https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres). This dataset is the record of all real estate transactions that happened in France in 2024. 
+This project started out with this dataset : *Demande de Valeurs Foncières (DVF)* from [data.gouv.fr website] (https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres). This dataset is the record of all real estate transactions that happened in France in 2024. 
 
 It is large and messy, so it's important that we start this by cleaning the data. 
 
