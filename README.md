@@ -13,9 +13,22 @@
 >[!TIP]
 >**How to run this code** How to open in VSCode, What file to run, How to call Streamlit ("streamlit run app.py")
 
-## 1. Starting the project : finding and cleaning the data 
+## MLOps and Maintenance
+How do we update the data ? How do we debug? 
 
-### DVF dataset
+## Future of this project
+Do users like this app? 
+
+Potential other features : here we'll write about the maintenance if hypothetically this project was published online and used by other people. 
+ex: anticipate what these users would need, statistics, latency, etc
+
+also hypothetically if we update this website, how would current version compare with old version. 
+
+## More information about building this real estate startup
+
+### 1. Starting the project : finding and cleaning the data 
+
+#### DVF dataset
 
 This project started our with this dataset : *Demande de Valeurs Foncières (DVF)* from [data.gouv.fr website] (https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres). This dataset is the record of all real estate transactions that happened in France in 2024. 
 
@@ -23,7 +36,7 @@ It is large and messy, so it's important that we start this by cleaning the data
 
 The first step was adding a .gitignore : "*.txt". This is important because otherwise, Git was going to track changes in the dataset everytime we made a commit.
 
-### Cleaning the data 
+#### Cleaning the data 
 
 Here are all the columns of the data, if they are empty or not, and what we could use them for. 
 
@@ -100,19 +113,18 @@ Just like Google Flights, we would like to compare the price of transactions to 
 
 [^1] : https://www.dictionnaire-juridique.com/definition/loi-carrez.php#:~:text=D%C3%A9finition%20de%20Loi%20Carrez&text=La%20surface%20%C3%A9nonc%C3%A9e%20%C3%A0%20l,de%20portes%20et%20de%20fen%C3%AAtres.
 
-## 2. Building features for our website 
+### 2. Building features for our website 
 
-### Feature to compare price to average (like Google Flights)
-### Fraud detection feature
-### Land potential score
-### Market liquidity score
+#### Feature to compare price to average (like Google Flights)
+#### Fraud detection feature
+#### Land potential score
+#### Market liquidity score
 
-## 3. Potential other features 
 
-here we'll write about the maintenance if hypothetically this project was published online and used by other people. 
-ex: anticipate what these users would need, statistics, latency, etc
 
-also hypothetically if we update this website, how would current version compare with old version. 
+
+
+
 
 
 
