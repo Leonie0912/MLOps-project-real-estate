@@ -4,6 +4,10 @@
 
 **Welcome to Vesta : Léonie Willecomme and Tommaso Conti's final project for the MLOps class (DSBA M2).**
 
+<p align="center">
+  <img src="vesta.png" width="200" />
+</p>
+
 >[!IMPORTANT]
 >**Executive Summary:** Vesta is built to assist people in purchasing a home or investing in real estate. Our platform uses the dataset "Demandes de Valeurs Foncières" of 2024 into an interface capable of analyzing price, location, and detecting fraudulent listings.
 > Our mission at Vesta is providing users with a reliable foundation for their property acquisition.
@@ -121,12 +125,12 @@ Just like Google Flights, we would like to compare the price of transactions to 
 
 [^1] : https://www.dictionnaire-juridique.com/definition/loi-carrez.php#:~:text=D%C3%A9finition%20de%20Loi%20Carrez&text=La%20surface%20%C3%A9nonc%C3%A9e%20%C3%A0%20l,de%20portes%20et%20de%20fen%C3%AAtres.
 
-### 2. Building features for our website 
+### 2. Building Vesta's analysis features 
 
-#### Feature to compare price to average (like Google Flights)
-#### Fraud detection feature
-#### Land potential score
-#### Market liquidity score
+#### Fraud Detection 
+#### Price Analysis
+#### Developer's Choice
+#### Market Velocity
 
 
 
