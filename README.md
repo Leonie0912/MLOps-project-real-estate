@@ -43,7 +43,7 @@ also hypothetically if we update this website, how would current version compare
 
 ## More information
 
-For more information about how this project was built, please visit (./MOREINFO.md). 
+For more information about how this project was built, please click [here](./MOREINFO.md). 
 
 
 
