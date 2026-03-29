@@ -5,7 +5,7 @@
 **Welcome to Vesta : Léonie Willecomme and Tommaso Conti's final project for the MLOps class (DSBA M2).**
 
 <p align="center">
-  <img src="vesta.png" width="200" />
+  <img src="images/vesta.png" width="200" />
 </p>
 
 >[!IMPORTANT]
