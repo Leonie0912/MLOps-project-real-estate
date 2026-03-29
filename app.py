@@ -4,7 +4,6 @@ import streamlit as st
 import pandas as pd
 
 from src.data_cleaning import clean_dvf
-#from src.map import get_coordinates
 
 st.set_page_config(page_title = "Léonie and Tommaso's Real Estate Startup", layout="wide")
 
