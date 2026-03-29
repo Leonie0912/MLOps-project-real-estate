@@ -21,9 +21,9 @@
 
 >[!TIP]
 >**How to run this code** 
-> Prerequesites : Having Python installed, having a code editor (like VSCode)
->On the top-right of this repo, click on the green button "<> Code" and copy the URL
->Open VSCode and paste the URL
+>**Prerequesites :** Having Python installed, having a code editor (like VSCode)
+>* On the top-right of this repo, click on the green button "<> Code" and copy the URL
+>* Open VSCode and paste the URL
 >Make sure to download the dataset (in a .txt format) from https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres and add it in the "data" folder
 
 
