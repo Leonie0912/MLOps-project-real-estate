@@ -22,12 +22,13 @@
 >[!TIP]
 >**How to run this code** 
 >**Prerequesites :** Having Python installed, having a code editor (like VSCode)
+>Make sure to download the dataset (in a .txt format) from https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres and add it in the "data" folder
 >* On the top-right of this repo, click on the green button "<> Code" and copy the URL
 >* Open VSCode and paste the URL
 >* Run app.py.
 >* When it finished running, paste this into the terminal : "streamlit run app.py". 
 >* Click on the link that appeared. It should be in this format : XXX. 
->Make sure to download the dataset (in a .txt format) from https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres and add it in the "data" folder
+
 
 
 ## MLOps and Maintenance
