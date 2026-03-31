@@ -4,6 +4,8 @@ import streamlit as st
 import pandas as pd
 
 from src.data_cleaning import clean_dvf
+from src.feature1 import detect_fraud
+from src.price_analysis import reference_price
 
 st.set_page_config(page_title = "Léonie and Tommaso's Real Estate Startup", layout="wide")
 
@@ -16,6 +18,9 @@ def preprocessing_data():
     cleaned=clean_dvf(raw_data)
     #optional
     #df['price_per_m2'] = df['Valeur fonciere'] / df["Surface reelle bati"]
+
+    price_dict = reference_price(cleaned)
+    cleaned = detect_fraud(cleaned, price_dict)
     return cleaned
 
 df_all = preprocessing_data()
@@ -69,6 +74,8 @@ for index, row in df_filtered.head(20).iterrows():
         with col2 : 
             st.write("More info:")
             st.write(f"Number of rooms : {int(row["Nombre pieces principales"])}")
+            if row["Fraud Flag"] == 1:
+                st.warning("This listing is flagged as fraud")
 
 #map API
 #gemini prompt : i want to use an api to add a map that shows where the listing is. the data doesn't have latitude and longitude. what do i do? should i build a function in a .py file and call it in the app.py?

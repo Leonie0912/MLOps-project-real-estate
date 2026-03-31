@@ -37,7 +37,7 @@ We need to update the data every year. In order to do that we plan on using a sc
 
 Errors will need to be monitored and fixed. We plan on using a dashboard to monitor the app and alert us if there are any errors. We aim at looking for logging errors and if fraud detection flags are showing any FP (a legitimate cheap listing flagged as fraud) or FN (a fraudulent listing not flagged as fraud). We also aim at looking for performance metrics like page load time, etc.
 
-We follow a canary deployment strategy. We will first deploy the new version of the app to a limited set of users, monitoring for issues before a wider rollout. If needed we can easily roll back to the previous releases with git tags
+We follow a canary deployment strategy. We will first deploy the new version of the app to a limited set of users, monitoring for issues before a wider rollout. If needed we can roll back to the previous stable releases marked with git tags.
 
 We aim at updating the requirements.txt file with the new dependencies for every new version of the app. Having pinned versions of dependencies matters for reproducibility of the repo. A potential next step would be to use Docker to containerize the app and make it easier to deploy and manage.
 
