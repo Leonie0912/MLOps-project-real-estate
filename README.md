@@ -32,7 +32,16 @@
 
 
 ## MLOps and Maintenance
-How do we update the data ? How do we debug? 
+
+We need to update the data every year. In order to do that we plan on using a script that will download the data from the official website, checking for differences in format (number of rows and names/number of columns) and re-process it. Once the new data is validated, we will update the app, keeping the old data for this intermediate stage.
+
+Errors will need to be monitored and fixed. We plan on using a dashboard to monitor the app and alert us if there are any errors. We aim at looking for logging errors and if fraud detection flags are showing any FP (a legitimate cheap listing flagged as fraud) or FN (a fraudulent listing not flagged as fraud). We also aim at looking for performance metrics like page load time, etc.
+
+We follow a canary deployment strategy. We will first deploy the new version of the app to a limited set of users, monitoring for issues before a wider rollout. If needed we can easily roll back to the previous releases with git tags
+
+We aim at updating the requirements.txt file with the new dependencies for every new version of the app. Having pinned versions of dependencies matters for reproducibility of the repo. A potential next step would be to use Docker to containerize the app and make it easier to deploy and manage.
+
+
 
 ## Future of this project
 Do users like this app? 
