@@ -4,10 +4,10 @@ import streamlit as st
 import pandas as pd
 
 from src.data_cleaning import clean_dvf
-from src.feature1 import detect_fraud
+from src.fraud_detection import detect_fraud
 from src.price_analysis import reference_price
-from src.feature2 import possible_development
-from src.feature3 import market_velocity
+from src.developer_choice import possible_development
+from src.market_velocity import market_velocity
 
 st.set_page_config(page_title = "Léonie and Tommaso's Real Estate Startup", layout="wide")
 
