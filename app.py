@@ -74,10 +74,12 @@ for index, row in df_filtered.head(20).iterrows():
             address = f"{row["No voie"]} {row["Type de voie"]} {row["Voie"]}"
             st.write(f"{address}")
             st.write(f"{row["Code postal"]} {row["Commune"]}")
+            st.write(f"Number of rooms : {int(row["Nombre pieces principales"])}")
 
         with col2 : 
-            st.write("More info:")
-            st.write(f"Number of rooms : {int(row["Nombre pieces principales"])}")
+            st.write("Our Analysis:")
+
+            st.write(f"Market Value: **{row['price_status']}**")
             if row["Fraud Flag"] == 1:
                 st.error("This listing is flagged as fraud")
 
