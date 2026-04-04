@@ -25,7 +25,7 @@
 >* Make sure to download the dataset (in a .txt format) from https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres and add it IN A FOLDER "DATA" ON YOUR COMPUTER
 >* On the top-right of this repo, click on the green button "<> Code" and copy the URL
 >* Open VSCode and paste the URL
->* Run app.py.
+>* Open a terminal run this command : "pip install -r requirements.txt"
 >* When it finished running, paste this into the terminal : "streamlit run app.py". 
 >* Click on the link that appeared. It should be in this format : http://192.168.1.11:8501. 
 
@@ -43,16 +43,25 @@ We aim at updating the requirements.txt file with the new dependencies for every
 
 
 
+## Limitations
+
+The main limitation of this project is that the data is updated only once a year, so prices could be outdated. The dataset also doesn't include latitude/longitude, which would be useful for more precise analysis or to show listings on a map. The dataset is also quite sparse, with many null values.
+
+Other limitations of our own features include the thresholds of the fraud detection (since they might not be optimal for rural areas) and that the market velocity treats all zip codes equally, even though some are very small.
+
+
+
 ## Future of this project
-Do users like this app? 
 
-Potential other features : here we'll write about the maintenance if hypothetically this project was published online and used by other people. 
-ex: anticipate what these users would need, statistics, latency, etc
+We want to collect user data to improve the app and gauge user satisfaction. We could collect data such as clicks on listings, time spent on page, etc. 
+New features will need to be implemented to expand our current offering. Users might want to be able to save their favourite listings, filter by price or surface, and be notified when a good deal appears. 
 
-also hypothetically if we update this website, how would current version compare with old version. 
+We can also improve our current features by tuning the thresholds, by using more advanced ML models, and by giving a score instead of a label. 
 
->[!NOTE]
->**Limitations:** here we write about the limitations of this project, mainly : data is not updated often, data sparsity (many null values), no latitude / longitude 
+We would use A/B testing to compare the new version of the features with the old version and analyze user behavior and satisfaction with statistical tests. The same concept can be applied to compare a new version of the app with the old version.
+
+Finally, a geocoder (a service that converts addresses into coordinates) could be used to show listings on a map.
+
 
 ## More information
 
