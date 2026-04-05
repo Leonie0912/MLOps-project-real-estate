@@ -9,7 +9,7 @@ from src.price_analysis import reference_price
 from src.developer_choice import possible_development
 from src.market_velocity import market_velocity
 
-st.set_page_config(page_title = "Léonie and Tommaso's Real Estate Startup", layout="wide")
+st.set_page_config(page_title = "Vesta", layout="wide")
 
 #1. data loading (using function from data_cleaning.py)
 @st.cache_data
@@ -71,7 +71,8 @@ for index, row in df_filtered.head(20).iterrows():
 
         with col1 : 
             st.write("Location: ")
-            address = f"{row["No voie"]} {row["Type de voie"]} {row["Voie"]}"
+            #int so it returns "6 rue de Douai" instead of "6.0 rue de Douai"
+            address = f"{int(row["No voie"])} {row["Type de voie"]} {row["Voie"]}"
             st.write(f"{address}")
             st.write(f"{row["Code postal"]} {row["Commune"]}")
             st.write(f"Number of rooms : {int(row["Nombre pieces principales"])}")
@@ -93,8 +94,7 @@ for index, row in df_filtered.head(20).iterrows():
             elif row["Market Velocity"] == "Active":
                 st.info("This listing is in an active market")
 
-#map API
-#gemini prompt : i want to use an api to add a map that shows where the listing is. the data doesn't have latitude and longitude. what do i do? should i build a function in a .py file and call it in the app.py?
+
                                                                 
 
 

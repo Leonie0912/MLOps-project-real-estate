@@ -15,7 +15,7 @@
 >[!NOTE]
 >**Our added value:** Going beyond traditional real estate platforms, Vesta analyzes every listing to assist decision-making : 
 >* Fraud Detection : Detecting abnormally low prices or dataset errors (for example a studio listed as having 4 beds)
->* Price Analysis : Comparing every listing with the local market and classifying in three categories : Good Deal, Fair Price, and Premium
+>* Price Analysis : Comparing every listing with the local market and classifying in three categories : Good Price, Fair Price, and High Price
 >* Developer's Choice : Finding listings perfect for developers and investors, offering lots of ready-to-build land
 >* Market Velocity : Measuring the speed of transactions in each location
 
