@@ -1,4 +1,4 @@
-# MLOps-project-real-estate
+# Vesta
 
 ![picture of a house](./images/building.jpeg)
 
@@ -20,7 +20,7 @@
 >* Market Velocity : Measuring the speed of transactions in each location
 
 >[!TIP]
->**How to run this code: **  
+>**How to run this code:**  
 >* **Prerequesites :** Having Python installed, having a code editor (like VSCode)  
 >* Make sure to download the dataset (in a .txt format) from https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres and add it IN A FOLDER "DATA" ON YOUR COMPUTER
 >* On the top-right of this repo, click on the green button "<> Code" and copy the URL
@@ -34,6 +34,8 @@
 ## MLOps and Maintenance
 
 We need to update the data every year. In order to do that we plan on using a script that will download the data from the official website, checking for differences in format (number of rows and names/number of columns) and re-process it. Once the new data is validated, we will update the app, keeping the old data for this intermediate stage.
+
+> **blabla:** blabla 
 
 Errors will need to be monitored and fixed. We plan on using a dashboard to monitor the app and alert us if there are any errors. We aim at looking for logging errors and if fraud detection flags are showing any FP (a legitimate cheap listing flagged as fraud) or FN (a fraudulent listing not flagged as fraud). We also aim at looking for performance metrics like page load time, etc.
 
