@@ -83,7 +83,7 @@ Here are some ideas of features we will integrate to this website :
 * Comparing prices to the "usual". 
 Just like Google Flights, we would like to compare the price of transactions to the usual price of the area / arrondissement / town.
 
-[^1] : https://www.dictionnaire-juridique.com/definition/loi-carrez.php#:~:text=D%C3%A9finition%20de%20Loi%20Carrez&text=La%20surface%20%C3%A9nonc%C3%A9e%20%C3%A0%20l,de%20portes%20et%20de%20fen%C3%AAtres.
+>[^1] : https://www.dictionnaire-juridique.com/definition/loi-carrez.php#:~:text=D%C3%A9finition%20de%20Loi%20Carrez&text=La%20surface%20%C3%A9nonc%C3%A9e%20%C3%A0%20l,de%20portes%20et%20de%20fen%C3%AAtres.
 
 ### 2. Building Vesta's analysis features 
 
