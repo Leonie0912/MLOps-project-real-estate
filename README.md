@@ -40,7 +40,7 @@ We need to update the data every year. In order to do that we plan on using a sc
 
 Errors will need to be monitored and fixed. We plan on using a dashboard to monitor the app and alert us if there are any errors. We aim at looking for logging errors and if fraud detection flags are showing any FP (a legitimate cheap listing flagged as fraud) or FN (a fraudulent listing not flagged as fraud). We also aim at looking for performance metrics like page load time, etc.
 
->* **If I am the maintainer:** I check the dashboard daily to see False Positive or False Negative alerts for listings, and I investigate them. On the dashboard, I can also see for every city the scores for every listing, so I can also monitor errors for other features, even if they would happen less (because they are numeric ratios).
+>* **If I am the maintainer:** I check the dashboard daily to see False Positive or False Negative alerts for listings, and I investigate them. On the dashboard, I can also see for every city the scores for every listing, so I can also monitor errors for other features.
 >* **If I am the user:** Using a little button in the corner of each listing, I can report a listing if I think it was wrongly flagged as a scam, or if it was given a score that I think is wrong (ex: developer's choice for a house with a tiny garden).
 
 We follow a canary deployment strategy. We will first deploy the new version of the app to a limited set of users, monitoring for issues before a wider rollout. If needed we can roll back to the previous stable releases marked with git tags.
