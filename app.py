@@ -53,9 +53,11 @@ df_filtered = df_all[
 
 town = df_all [df_all["Code postal"] == selected_cp]["Commune"].iloc[0].title()
 
-st.title("DVF Explorer 2024")
+st.title("Welcome to Vesta !")
+st.subheader("Please select a zip code to start searching.")
+
 st.write(f"Showing results for {selected_cp} {town}")
-st.subheader(f"{len(df_filtered)} listings")
+st.subheader(f"We found {len(df_filtered)} listings")
 
 #showing only the first 20 transactions
 
