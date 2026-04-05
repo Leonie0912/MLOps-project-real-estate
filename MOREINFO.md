@@ -29,7 +29,7 @@ A column is considered full when more than ~60% of it is full, and considered em
 |:---|:---|:---|:---|
 |Date mutation|Date of the transaction|No|No|
 |Nature mutation|Type of the transaction (ex: vente, vente terrain, échange)|No|No|
-|Valeur fonciere|Amount in €|No|Yes : basis for all price and fraud ratios|
+|Valeur fonciere|Amount in €|No|Yes : basis for price analysis and fraud detection|
 
 **Address**
 |Column|Short Description|Mostly Empty?|Using it?|
@@ -39,7 +39,7 @@ A column is considered full when more than ~60% of it is full, and considered em
 |Type de voie|Rue, Avenue...|No|Yes : in app UI|
 |Code voie|Street Code|No|No|
 |Voie|Name of the street|No|Yes : in app UI|
-|Code postal|Zip Code|No|Yes : to group data and calculate medians|
+|Code postal|Zip Code|No|Yes : to group data and calculate medians, also app UI|
 |Commune|Name of the city|No|Yes : in app UI|
 |Code departement|Department (ex: 75, 92)|No|No|
 |Code commune|City code from INSEE|No|No|
@@ -66,8 +66,8 @@ We don't use these columns
 |Code type local|Code of property type|No|No|
 |Type local|Type (house, appt, etc)|No|Yes : to separate Houses vs Apartments|
 |Identifiant local|Property ID|Yes||
-|Surface reelle bati|Total building area|No|Yes : for price per m² and also land potential|
-|Nombre pieces principales|Number of rooms (excl rooms with water supply)|No|Yes : for fraud detection|
+|Surface reelle bati|Total building area|No|Yes : for price per m² (in price analysis) and also land potential|
+|Nombre pieces principales|Number of rooms (excl rooms with water supply)|No|Yes : for fraud detection, also app UI|
 
 **Land**
 
@@ -77,13 +77,9 @@ We don't use these columns
 |Nature culture speciale|Specific land use type|Yes||
 |Surface terrain|Total surface|No|Yes : for development potential feature|
 
-The "surface Carrez" is the floor area computed following the Loi Carrez : the total living space without the surface of walls, stairs, and areas without less than 1.8m between floor and ceiling[^1].
-
 Here are some ideas of features we will integrate to this website : 
 * Comparing prices to the "usual". 
 Just like Google Flights, we would like to compare the price of transactions to the usual price of the area / arrondissement / town.
-
->[^1] : https://www.dictionnaire-juridique.com/definition/loi-carrez.php#:~:text=D%C3%A9finition%20de%20Loi%20Carrez&text=La%20surface%20%C3%A9nonc%C3%A9e%20%C3%A0%20l,de%20portes%20et%20de%20fen%C3%AAtres.
 
 ### 2. Building Vesta's analysis features 
 
